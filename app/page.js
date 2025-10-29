@@ -1,16 +1,20 @@
 // app/page.js
 import ChatInterface from '../components/ChatInterFace';
+import AuthButton from '@/components/AuthButton';
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       {/* Header */}
       <header className="bg-white shadow-sm">
-        <div className="max-w-6xl mx-auto px-4 py-4">
-          <h1 className="text-2xl font-bold text-gray-800">
-            🤖 AI Study Buddy
-          </h1>
-          <p className="text-gray-600">Tutor AI 24/7 untuk pelajar Indonesia</p>
+        <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+          <div>
+            <h1 className="text-2xl font-bold text-gray-800">
+              🤖 AI Study Buddy
+            </h1>
+            <p className="text-gray-600">Tutor AI 24/7 untuk pelajar Indonesia</p>
+          </div>
+          <AuthButton />
         </div>
       </header>
 
